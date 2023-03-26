@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,800&display=swap');
+:root{
+--green: #08a784c0;
+--black: #130F40;
+--light-color: #e7e3e3;
+--box-shadow: 0 .2rem 1rem rgba(0,0,0.1);
+--border:  2rem solid rgba(0,0,0.1);
+--outline : .1rem solid rgba(0,0,0.1);
+
+}
+
+*{font-family: 'Shantell Sans', cursive;
+
+                   margin :0;
+                   padding :0;
+                   box-sizing: border-box;
+                   outline: none;
+                   border: none;
+                   text-decoration: none;
+                   transition: all  sec linear;
+}
+html{font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body {background:#eee;
+}
+
+ /* csss code for banner */
+section {padding: 2rem 9%;
+  
+}
+
+.btn { 
+  border: .2rem solid var(--black);
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+.btn:hoover {
+background: var(--green);
+color:#fff ;
+}
+.header{
+    border: 0px solid;
+    position: relative;
+    top: 0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    color: blue;
+}
+.header .logo{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.header .logo i{
+
+    color: var(--green);
+}
+.header {
+  color: blue;
+}
+
+.header .navbar a
+{   font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.header .navbar a:hover{
+    color: var(--green);
+}
+.header .icons div{
+    border: 0px solid;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    background-color: var(--green);
+    color:white;
+}
+#menu-btn{
+    display: none;
+}
+.Home {
+  background: rgb(231, 221, 226);
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  font-size: 10px;
+  box-shadow: var(--box-shadow);
+  height: 150%;
+}
+
+  .Home .content{
+  text-align: center;
+}
+.Home .content h3{
+  color: blue;
+  font-size: 35px;
+  text-align: center;
+}
+.Home .content h3 span{
+  color: var(--green);
+  font-size: 35px;
+}
+.Home .content p{
+  color: var(--black);
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+/* slider css start */
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width:100%;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Slider animation */
+@keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  33.33% {
+    transform: translateX(0%);
+  }
+  33.34% {
+    transform: translateX(-100%);
+  }
+  66.67% {
+    transform: translateX(-100%);
+  }
+  66.68% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.slides {
+  animation: slider 9s infinite;
+}
+
+  /* slider css end */
+
+  
+
+
+
+
+    /* media queries */
+ @media (max-width: 1286px) 
+ {
+  html{
+    font-size: 45%;
+    }
+ }
+
+ /* media queries */
+ @media (max-width: 991px) 
+ {
+  html{
+    font-size: 40%;
+    }
+    .header {
+      padding: 2rem
+    }
+  section{
+      padding: 2rem;
+  }
+ }
+
+ @media (max-width: 780px) {
+  #menu-btn{ 
+    display: inline-block;
+  }
+ .header .navbar {
+   position: absolute;
+   top:110%;
+   right: 2rem;
+   z-index: 10;
+   width:30rem;
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+   background: #fff;
+ }
+ .header .navbar a {
+font-size: 2rem;
+margin: 2rem 2.5rem;
+display:block;
+z-index: 10;
+
+}
+ }
+ @media (max-width: 450px) 
+ {
+  html{
+    font-size: 25%;
+    }
+ }
